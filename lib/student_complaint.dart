@@ -301,6 +301,12 @@ class ComplaintFormState extends State<ComplaintForm> {
                 controller: descriptionController,
               ),
               const SizedBox(height: 16),
+              _buildTextAreaWithHint(
+                label: "Note:",
+                hint: "Additional notes.",
+                controller: descriptionController,
+              ),
+              const SizedBox(height: 16),
               const Text(
                 "Priority",
                 style: TextStyle(
