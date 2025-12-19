@@ -45,8 +45,10 @@ class HomePageState extends State<HomePage> {
       if (response.statusCode == 200) {
         final List<Map<String, dynamic>> notifications =
             List<Map<String, dynamic>>.from(jsonDecode(response.body));
-        final hasUnread =
-            notifications.any((notification) => notification['isRead'] != true);
+        final hasUnread = notifications.any(
+          (notification) => notification['isRead'] != true,
+        );
+
         setState(() {
           _hasUnreadNotifications = hasUnread;
         });
@@ -83,7 +85,7 @@ class HomePageState extends State<HomePage> {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  "WELCOME, ${widget.matricNo}",
+                  "ASSALAMUALAIKUM STUDENTS, ${widget.matricNo}",
                   style: const TextStyle(
                     fontSize: 17,
                     color: Color.fromARGB(255, 11, 11, 11),
@@ -186,7 +188,8 @@ class HomePageState extends State<HomePage> {
                                 builder: (context) => TokenProvider(
                                   token: token,
                                   child: ComplaintStatusScreen(
-                                      matricNo: widget.matricNo),
+                                    matricNo: widget.matricNo,
+                                  ),
                                 ),
                               ),
                             );
@@ -277,10 +280,7 @@ class CategoryBox extends StatelessWidget {
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
-                child: Image.asset(
-                  imageAsset,
-                  fit: BoxFit.cover,
-                ),
+                child: Image.asset(imageAsset, fit: BoxFit.cover),
               ),
             ),
             const SizedBox(height: 10),
