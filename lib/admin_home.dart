@@ -1,3 +1,9 @@
+// Admin Home Page
+// This screen serves as the main dashboard for administrators.
+// It provides access to administrative features such as user management,
+// content moderation, and system overview.
+// This file contains only UI and navigation logic for the admin homepage.
+
 import 'package:flutter/material.dart';
 import 'admin_review.dart';
 import 'admin_faq.dart';
@@ -199,7 +205,8 @@ class CategoryBox extends StatelessWidget {
         width: double.infinity, // Let the container use the available width
         height: 165,
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 184, 215, 240), // Darker shade of background color for category box
+          color: const Color.fromARGB(255, 184, 215,
+              240), // Darker shade of background color for category box
           borderRadius: BorderRadius.circular(90),
         ),
         child: Column(
