@@ -1,6 +1,7 @@
 // Admin Home Page
 // This screen serves as the main dashboard for administrators.
-// It provides access to administrative features such as user management, content moderation, and system overview.
+// It provides access to administrative features such as user management,
+// content moderation, and system overview.
 // This file contains only UI and navigation logic for the admin homepage.
 
 import 'package:flutter/material.dart';
