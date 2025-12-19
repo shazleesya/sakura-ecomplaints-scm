@@ -85,7 +85,7 @@ class HomePageState extends State<HomePage> {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  "ASSALAMUALAIKUM STUDENTS, ${widget.matricNo}",
+                  "HELLO WELCOME, ${widget.matricNo}",
                   style: const TextStyle(
                     fontSize: 17,
                     color: Color.fromARGB(255, 11, 11, 11),
